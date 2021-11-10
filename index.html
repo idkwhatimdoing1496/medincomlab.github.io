@@ -9,53 +9,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Street Legal Comp.</title>
     <style>
         @media screen and (max-width: 500px) {
-            .hamburgerMenu{
+            .hamburger {
+                display: inline;
                 position: fixed;
                 z-index: 100;
                 top: 5vw;
                 right: 5vw;
-                cursor: pointer;
             }
-            .closeIcon{
+            .closeIcon {
                 display: none;
+                color: white;
             }
-            #header{
-                flex-direction: column;
-            }
-            .navIn{
-                flex-direction: column;
-                text-align: center;
+            .navIn {
                 position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 transform: translateY(-100%);
-                transition: translateY 0.2s;
+                transition: transform 0.2s;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 z-index: 99;
-                padding-top: 4rem;
-                background: white;
+                background: black;
+            }
+            .showMenu {
+                transform: translateY(0);
             }
             .nav{
-                height: 100vh;
+                margin: 10vw 0;
             }
             .navButton{
                 font-size: 5vw;
-            }
-            .showMenu{
-                display: none;
+                color: white;
             }
         }
     </style>
 </head>
     <body>
         <div class="background">
-            <header id="header">
+            <header class="header">
                 <div class="logo">
-                    <a href="">Street<br>Comp.</a>
+                    <a href="" class="logoText">Street<br>Comp.</a>
                 </div>
                 <nav>
                     <ul class="navIn">
@@ -65,25 +65,13 @@
                         <li class="nav"><a href="" class="navButton">DOWNLOAD</a></li>
                         <li class="nav"><a href="" class="navButton">FAQ</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <i class="menuIcon material-icons">menu</i>
+                        <i class="closeIcon material-icons">close</i>
+                    </div>
                 </nav>
             </header>
         </div>
-        <div class="hamburgerMenu">
-            <div class="openIcon"><img src="img/outline_menu_black_24dp.png" alt="Open"></div>
-            <div class="closeIcon"><img src="img/outline_close_black_24dp.png" alt="Close"></div>
-        </div>
-        <div class="height100"></div>
-        <footer>
-            <nav>
-                <ul class="navInFooter">
-                    <li class="nav"><a href="" class="navButton">ABOUT</a></li>
-                    <li class="nav"><a href="" class="navButton">RULEBOOK</a></li>
-                    <li class="nav"><a href="" class="navButton">SCHEDULE</a></li>
-                    <li class="nav"><a href="" class="navButton">DOWNLOAD</a></li>
-                    <li class="nav"><a href="" class="navButton">FAQ</a></li>
-                </ul>
-            </nav>
-        </footer>
     </body>
 <script src="js/hamburger.js"></script>
 </html>

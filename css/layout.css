@@ -1,41 +1,43 @@
 *,
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.hamburger{
+    display: none;
+}
+
 .background{
     background: url("/image/background.png") center bottom;
-    background-size:     cover;                      /* <------ */
-    height: 1000px;
-    max-height: 100vh;
-}
-.wrapper{
-    margin: 0 2.5vw;
+    height: 100vh;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     padding: 1vw 2.5vw;
 }
-
+    /*LOGO*/
 .logo{
     text-align: center;
 }
 
-.logo >a{
+.logoText{
     text-decoration: none;
     color: black;
     font-family: 'Cabin', sans-serif;
     font-weight: 700;
     font-size: medium;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.navIn{
+    /*NAVIGATION*/
+.navIn {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -47,18 +49,5 @@ header{
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
     font-weight: 600;
-    font-size: small;
-}
-
-.height100{
-    height: 100vh;
-    background: black;
-}
-
-footer{
-    display: flex;
-}
-.navInFooter{
-    display: flex;
-    flex-direction: column;
+    font-size: medium;
 }
