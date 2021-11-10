@@ -1,0 +1,53 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hamburger{
+    display: none;
+}
+
+.background{
+    background: url("/img/background.png") center bottom;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vw 2.5vw;
+}
+    /*LOGO*/
+.logo{
+    text-align: center;
+}
+
+.logoText{
+    text-decoration: none;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+    /*NAVIGATION*/
+.navIn {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navButton{
+    margin-right: 2vw;
+    color: black;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+}
